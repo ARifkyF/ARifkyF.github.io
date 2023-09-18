@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Baloo 2', cursive !important;
+}
+
+$primary: #454EAA;
+$secondary:#D9EEFB;
+$info: #F365B1;
+$warning: #FCCF47;
+$danger: #F46F65;
+$success: #55C494;
+$light: #F6F6F6;
+$dark: #323232;
+$text-muted: #B0B0B0;
+$enable-negative-margins: true;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            600 !default;
+p {
+    font-size: 1.25rem;
+}
+$enable-smooth-scroll: true;
+@keyframes geser-kanan-kiri {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Geser ke kanan sejauh 20px pada 50% animasi */
+    }
+    100% {
+      transform: translateX(0); /* Kembali ke posisi awal pada 100% animasi */
+    }
+  }
+
+.cloud-1 {
+    position: absolute;
+    right: -5%;
+    height: 12vh;
+    z-index: 1;
+    animation-name: geser-kanan-kiri; /* Menggunakan animasi yang telah didefinisikan */
+    animation-duration: 2s; /* Durasi animasi (2 detik dalam contoh ini) */
+    animation-iteration-count: infinite; /* Animasi berjalan secara tak terbatas */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.cloud-2 {
+    position: absolute;
+    left: -7%;
+    top: 10%;
+    height: 15vh;
+    z-index: 1;
+    animation-name: geser-kanan-kiri; /* Menggunakan animasi yang telah didefinisikan */
+    animation-duration: 3s; /* Durasi animasi (2 detik dalam contoh ini) */
+    animation-iteration-count: infinite; /* Animasi berjalan secara tak terbatas */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.cloud-3 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    height: 6vh;
+    z-index: 1;
+    animation-name: geser-kanan-kiri; /* Menggunakan animasi yang telah didefinisikan */
+    animation-duration: 4s; /* Durasi animasi (2 detik dalam contoh ini) */
+    animation-iteration-count: infinite; /* Animasi berjalan secara tak terbatas */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.cloud-4 {
+    position: absolute;
+    left: 4%;
+    top: 35%;
+    height: 6vh;
+    z-index: 1;
+    animation-name: geser-kanan-kiri; /* Menggunakan animasi yang telah didefinisikan */
+    animation-duration: 5s; /* Durasi animasi (2 detik dalam contoh ini) */
+    animation-iteration-count: infinite; /* Animasi berjalan secara tak terbatas */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.cloud-5 {
+    position: absolute;
+    left: -5%;
+    height: 9vh;
+    z-index: 1;
+    animation-name: geser-kanan-kiri; /* Menggunakan animasi yang telah didefinisikan */
+    animation-duration: 4s; /* Durasi animasi (2 detik dalam contoh ini) */
+    animation-iteration-count: infinite; /* Animasi berjalan secara tak terbatas */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #mycarousel {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      
+      .carousel-control-prev {
+        margin-left: -40px;
+      }
+      
+      .carousel-control-next {
+        margin-right: -40px;
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+  #mycarousel {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .carousel-control-prev {
+    margin-left: -100px;
+  }
+  
+  .carousel-control-next {
+    margin-right: -100px;
+  }
+}
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Your other SCSS code here
+
+// sass main.scss css/main.css
