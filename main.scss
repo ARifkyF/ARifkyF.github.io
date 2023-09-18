@@ -94,41 +94,6 @@ $enable-smooth-scroll: true;
     animation-timing-function: ease-in-out;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    #mycarousel {
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-      
-      .carousel-control-prev {
-        margin-left: -40px;
-      }
-      
-      .carousel-control-next {
-        margin-right: -40px;
-      }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-  #mycarousel {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  
-  .carousel-control-prev {
-    margin-left: -100px;
-  }
-  
-  .carousel-control-next {
-    margin-right: -100px;
-  }
-}
-
-
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
